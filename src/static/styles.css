@@ -16,12 +16,32 @@ body {
 }
 
 header {
-  text-align: center;
   padding: 20px 0;
   margin-bottom: 30px;
   background-color: #1a237e;
   color: white;
   border-radius: 5px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.account-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.account-button {
+  min-width: 42px;
+  padding: 8px;
+  font-size: 20px;
 }
 
 header h1 {
@@ -197,4 +217,11 @@ footer {
   margin-top: 30px;
   padding: 20px;
   color: #666;
+}
+
+@media (max-width: 480px) {
+  .header-content {
+    align-items: flex-start;
+    padding: 0 14px;
+  }
 }
